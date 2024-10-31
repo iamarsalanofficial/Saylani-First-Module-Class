@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter Subscription</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #16243b;
+        background-color: #16243b;
+      }
+
+      .logo {
+        font-size: 24px;
+        color: #ffc107;
+      }
+
+      .logo span {
+        color: #ffffff;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      button {
+        border: none;
+        padding: 12px 30px;
+        border-radius: 30px;
+        transition: 0.5s;
+      }
+
+      .subscription-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        background-color: #16243b;
+      }
+
+      .content {
+        max-width: 50%;
+      }
+
+      .content h1 {
+        font-size: 48px;
+        font-weight: bold;
+        color: #ffc107;
+      }
+
+      .content p {
+        font-size: 16px;
+        color: #ffffff;
+        margin: 20px 0;
+        line-height: 1.5;
+      }
+
+      .subscription-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .subscription-form input[type="text"],
+      .subscription-form input[type="email"] {
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: none;
+        border-radius: 80px;
+        outline: none;
+        width: 450px;
+      }
+
+      .subscription-form button {
+        padding: 15px;
+        background-color: #ffc107;
+        border: none;
+        border-radius: 5px;
+        color: #16243b;
+        font-size: 18px;
+        border-radius: 80px;
+        cursor: pointer;
+        width: 150px;
+      }
+
+      .image-container {
+        position: relative;
+        max-width: 40%;
+      }
+
+      .image-container img {
+        width: 100%;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo">Creative <span>Marketing</span></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <div class="search-icon">
+          <button>Search</button>
+        </div>
+      </nav>
+    </header>
+
+    <section class="subscription-section">
+      <div class="content">
+        <h1>Subscribe Now<br />to Our Newsletter</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <form class="subscription-form">
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <div class="image-container">
+        <img src="img/oi.jpg" alt="User Image" />
+      </div>
+    </section>
+
+  </body>
+</html>

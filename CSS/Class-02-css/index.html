@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1000px;
+            width: 90%;
+            gap: 30px;
+        }
+
+        .left-section {
+            flex: 1;
+        }
+
+        .left-section h1 {
+            color: #1877f2;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .left-section p {
+            font-size: 20px;
+            color: #606770;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .input-field {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+
+        .input-field input {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+
+        .login-btn {
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .forgot-password {
+            text-align: center;
+            color: #1877f2;
+            font-size: 14px;
+            margin-top: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .create-account {
+            margin-top: 20px;
+            padding: 12px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>facebook</h1>
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+        <div class="right-section">
+            <div class="input-field">
+                <input type="text" placeholder="Email or phone number">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Password">
+            </div>
+            <button class="login-btn">Login</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button class="create-account">Create new account</button>
+        </div>
+    </div>
+</body>
+</html>
