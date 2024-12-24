@@ -1,5 +1,5 @@
-My SHort Detail:
-Name : MUhammad Arsalan-310877
+My Short Detail:
+Name : Muhammad Arsalan-310877
 Institute : Saylani Mass IT Training
 Instructure/Faculty : Muhammad Rizwan Bhatti 
 Batch : 13
