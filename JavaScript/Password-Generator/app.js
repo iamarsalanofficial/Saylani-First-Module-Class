@@ -1,5 +1,5 @@
 function generatePassword() {
-    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+    const characters = "ABCDEFGHIJKLMNOPQRST123456789abcdefghijklmnopqrstuvwxyz";
     const makepassword = 8;
     let password = "";
 
@@ -13,3 +13,4 @@ function generatePassword() {
 
 const newPassword = generatePassword();
 console.log("Generated Password:", newPassword);
+
