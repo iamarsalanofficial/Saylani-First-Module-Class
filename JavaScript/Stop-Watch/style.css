@@ -1,0 +1,61 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.timer {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#start {
+    background: #28a745;
+    color: white;
+}
+
+#stop {
+    background: #dc3545;
+    color: white;
+}
+
+#reset {
+    background: #007bff;
+    color: white;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
