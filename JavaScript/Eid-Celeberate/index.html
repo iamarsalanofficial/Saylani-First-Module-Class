@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eid Mubarak Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f0f0f0, #d9e4dd);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 340px;
+            position: relative;
+        }
+
+        .card h1 {
+            color: #2b7a78;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            margin-bottom: 20px;
+            min-height: 40px;
+            transition: all 0.5s ease;
+        }
+
+        .countdown {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .countdown div {
+            background: #2b7a78;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            width: 60px;
+        }
+
+        .countdown div span {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .countdown div small {
+            font-size: 12px;
+        }
+
+        .greeting {
+            color: #3aafa9;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>Eid Mubarak!</h1>
+        <p id="message">Countdown to Eid al-Fitr 2025</p>
+        <div class="countdown" id="countdown">
+            <div>
+                <span id="days">0</span>
+                <small>Days</small>
+            </div>
+            <div>
+                <span id="hours">0</span>
+                <small>Hours</small>
+            </div>
+            <div>
+                <span id="minutes">0</span>
+                <small>Min</small>
+            </div>
+            <div>
+                <span id="seconds">0</span>
+                <small>Sec</small>
+            </div>
+        </div>
+        <div class="greeting" id="eidGreeting"></div>
+    </div>
+
+    <script>
+        const eidDate = new Date("March 31, 2025 00:00:00").getTime();
+
+        const countdown = () => {
+            const now = new Date().getTime();
+            const distance = eidDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").style.display = "none";
+                document.getElementById("message").innerText = "Ramadan has ended! May Allah accept your fasting and prayers.";
+                document.getElementById("eidGreeting").innerText = "🎉 Eid Mubarak! May this Eid bring joy & blessings!";
+            }
+        };
+
+        const x = setInterval(countdown, 1000);
+    </script>
+
+</body>
+
+</html>
